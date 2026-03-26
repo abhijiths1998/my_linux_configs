@@ -1,5 +1,10 @@
 # Catppuccin Mocha - Dunst Notification Colors
 
+[global]
+transparency = 18
+frame_width = 2
+corner_radius = 12
+
 [urgency_low]
 background = "#313244"
 foreground = "#a6adc8"

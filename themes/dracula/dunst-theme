@@ -1,3 +1,8 @@
+[global]
+transparency = 18
+frame_width = 2
+corner_radius = 12
+
 [urgency_low]
     background = "#282a36"
     foreground = "#6272a4"

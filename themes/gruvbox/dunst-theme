@@ -1,5 +1,10 @@
 # Gruvbox Dark - Dunst Notification Colors
 
+[global]
+transparency = 10
+frame_width = 2
+corner_radius = 12
+
 [urgency_low]
 background = "#3c3836"
 foreground = "#a89984"

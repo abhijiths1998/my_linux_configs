@@ -1,5 +1,10 @@
 # Nord - Dunst Notification Colors
 
+[global]
+transparency = 20
+frame_width = 2
+corner_radius = 12
+
 [urgency_low]
 background = "#3b4252"
 foreground = "#d8dee9"

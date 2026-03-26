@@ -1,5 +1,10 @@
 # Everforest Dark Medium - Dunst Notification Colors
 
+[global]
+transparency = 15
+frame_width = 2
+corner_radius = 12
+
 [urgency_low]
 background = "#343f44"
 foreground = "#859289"
