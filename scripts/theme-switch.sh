@@ -49,6 +49,12 @@ with open('$dunstrc', 'w') as f:
 " 2>/dev/null || cp "$theme_dir/dunst-theme" "$dunstrc.theme"
     fi
 
+    # Fastfetch theme
+    if [[ -f "$theme_dir/fastfetch.jsonc" ]]; then
+        mkdir -p "$HOME/.config/fastfetch"
+        cp "$theme_dir/fastfetch.jsonc" "$HOME/.config/fastfetch/config.jsonc"
+    fi
+
     # Save current theme
     echo "$theme" > "$DOTFILES/.current-theme"
 

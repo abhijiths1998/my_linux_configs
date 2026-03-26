@@ -1,0 +1,101 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "padding": { "top": 1, "left": 2, "right": 2 },
+        "color": {
+            "1": "#d65d0e",
+            "2": "#d79921",
+            "3": "#cc241d",
+            "4": "#98971a",
+            "5": "#b16286",
+            "6": "#458588"
+        }
+    },
+    "display": {
+        "separator": " :: ",
+        "color": {
+            "keys": "#d65d0e",
+            "title": "#d79921",
+            "output": "#ebdbb2",
+            "separator": "#928374"
+        }
+    },
+    "modules": [
+        {
+            "type": "title",
+            "color": { "user": "#d79921", "host": "#d65d0e" }
+        },
+        {
+            "type": "separator",
+            "string": "\u2500"
+        },
+        {
+            "type": "os",
+            "key": "\u2002 OS"
+        },
+        {
+            "type": "host",
+            "key": "\u2002 Host"
+        },
+        {
+            "type": "kernel",
+            "key": "\u2002 Kernel"
+        },
+        {
+            "type": "uptime",
+            "key": "\u2002 Uptime"
+        },
+        {
+            "type": "packages",
+            "key": "\u2002 Packages"
+        },
+        {
+            "type": "shell",
+            "key": "\u2002 Shell"
+        },
+        {
+            "type": "display",
+            "key": "\u2002 Display"
+        },
+        {
+            "type": "de",
+            "key": "\u2002 DE"
+        },
+        {
+            "type": "wm",
+            "key": "\u2002 WM"
+        },
+        {
+            "type": "terminal",
+            "key": "\u2002 Terminal"
+        },
+        "break",
+        {
+            "type": "cpu",
+            "key": "\u2002 CPU"
+        },
+        {
+            "type": "gpu",
+            "key": "\u2002 GPU"
+        },
+        {
+            "type": "memory",
+            "key": "\u2002 Memory",
+            "format": "{used} / {total} ({percentage})"
+        },
+        {
+            "type": "disk",
+            "key": "\u2002 Disk",
+            "folders": "/"
+        },
+        {
+            "type": "battery",
+            "key": "\u2002 Battery"
+        },
+        "break",
+        {
+            "type": "colors",
+            "symbol": "circle"
+        }
+    ]
+}

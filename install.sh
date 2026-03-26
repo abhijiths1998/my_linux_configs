@@ -342,6 +342,13 @@ PYEOF
         fi
     fi
 
+    # Fastfetch theme
+    if [[ -f "$theme_dir/fastfetch.jsonc" ]]; then
+        mkdir -p "$HOME/.config/fastfetch"
+        cp "$theme_dir/fastfetch.jsonc" "$HOME/.config/fastfetch/config.jsonc"
+        log_success "Fastfetch theme applied"
+    fi
+
     # Save current theme
     echo "$theme" > "$DOTFILES/.current-theme"
     log_success "Theme set to: $theme"

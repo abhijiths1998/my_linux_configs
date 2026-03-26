@@ -1,0 +1,101 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "padding": { "top": 1, "left": 2, "right": 2 },
+        "color": {
+            "1": "#61afef",
+            "2": "#c678dd",
+            "3": "#56b6c2",
+            "4": "#98c379",
+            "5": "#e06c75",
+            "6": "#e5c07b"
+        }
+    },
+    "display": {
+        "separator": " \u2771 ",
+        "color": {
+            "keys": "#61afef",
+            "title": "#c678dd",
+            "output": "#abb2bf",
+            "separator": "#5c6370"
+        }
+    },
+    "modules": [
+        {
+            "type": "title",
+            "color": { "user": "#c678dd", "host": "#61afef" }
+        },
+        {
+            "type": "separator",
+            "string": "\u2500"
+        },
+        {
+            "type": "os",
+            "key": "  OS"
+        },
+        {
+            "type": "host",
+            "key": "  Host"
+        },
+        {
+            "type": "kernel",
+            "key": "  Kernel"
+        },
+        {
+            "type": "uptime",
+            "key": "  Uptime"
+        },
+        {
+            "type": "packages",
+            "key": "  Packages"
+        },
+        {
+            "type": "shell",
+            "key": "  Shell"
+        },
+        {
+            "type": "display",
+            "key": "  Display"
+        },
+        {
+            "type": "de",
+            "key": "  DE"
+        },
+        {
+            "type": "wm",
+            "key": "  WM"
+        },
+        {
+            "type": "terminal",
+            "key": "  Terminal"
+        },
+        "break",
+        {
+            "type": "cpu",
+            "key": "  CPU"
+        },
+        {
+            "type": "gpu",
+            "key": "  GPU"
+        },
+        {
+            "type": "memory",
+            "key": "  Memory",
+            "format": "{used} / {total} ({percentage})"
+        },
+        {
+            "type": "disk",
+            "key": "  Disk",
+            "folders": "/"
+        },
+        {
+            "type": "battery",
+            "key": "  Battery"
+        },
+        "break",
+        {
+            "type": "colors",
+            "symbol": "circle"
+        }
+    ]
+}
