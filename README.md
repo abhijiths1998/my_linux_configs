@@ -1,13 +1,18 @@
-# Hyprland Dotfiles
+# My Linux Configs
 
-Arch Linux + Hyprland rice with 10 themes and a one-command installer.
+Arch Linux + Hyprland rice with 10 themes, a one-command installer, and a Nobara-parity gaming setup script for NVIDIA.
 
 ## Quick Start
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/hyprland-dots.git ~/.dotfiles
+git clone https://github.com/abhijiths1998/my_linux_configs.git ~/.dotfiles
 cd ~/.dotfiles
+
+# Hyprland desktop setup
 ./install.sh --all --theme everforest --packages
+
+# Gaming setup (Nobara parity, NVIDIA optimized)
+./gaming-setup.sh
 ```
 
 ## Themes
@@ -101,3 +106,43 @@ Core: `hyprland waybar wofi dunst kitty swww`
 Extras: `grim slurp grimblast wl-clipboard cliphist thunar pavucontrol hypridle hyprlock wlogout`
 Fonts: `ttf-jetbrains-mono-nerd`
 Themes: `adw-gtk3 papirus-icon-theme bibata-cursor-theme`
+
+---
+
+## Gaming Setup (Nobara Parity)
+
+`gaming-setup.sh` turns a vanilla Arch install into a gaming-ready system matching what Nobara provides out of the box.
+
+```bash
+# Full gaming setup
+./gaming-setup.sh
+
+# Skip specific components
+./gaming-setup.sh --skip-nvidia       # No NVIDIA drivers
+./gaming-setup.sh --skip-kernel       # Keep current kernel
+./gaming-setup.sh --skip-controllers  # No controller drivers
+
+# Preview what would happen
+./gaming-setup.sh --dry-run
+```
+
+### What it installs
+
+| Category | Packages |
+|----------|----------|
+| **NVIDIA** | `nvidia-dkms`, `nvidia-utils`, `lib32-nvidia-utils`, Wayland env vars, DKMS rebuild hook |
+| **Kernel** | `linux-zen` (fsync, futex2, better scheduling) |
+| **Steam** | Steam, Proton-GE, Lutris, Heroic, Bottles, Wine-staging |
+| **Tools** | GameMode, MangoHud, GameScope, DXVK, VKD3D |
+| **Controllers** | xpadneo (Xbox), dualsensectl (PS5), hid-nintendo (Switch) |
+| **Multimedia** | OBS Studio, Discord, full GStreamer/FFmpeg codecs |
+| **Tweaks** | `vm.max_map_count`, I/O schedulers, ananicy-cpp, SSD TRIM, optional mitigations=off |
+
+### Steam Launch Options
+
+```
+gamemoderun %command%                  # CPU governor optimization
+mangohud %command%                     # FPS/stats overlay
+gamescope -f -- %command%              # SteamOS-style compositing
+gamemoderun mangohud %command%         # Both together
+```
