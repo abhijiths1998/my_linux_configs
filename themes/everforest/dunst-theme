@@ -1,4 +1,4 @@
-# Everforest Dark Medium - Dunst Notification Colors
+# Everforest Dark Hard - Dunst Notification Colors
 
 [global]
 transparency = 15
@@ -6,19 +6,19 @@ frame_width = 2
 corner_radius = 12
 
 [urgency_low]
-background = "#343f44"
+background = "#2d353b"
 foreground = "#859289"
 frame_color = "#a7c080"
 timeout = 5
 
 [urgency_normal]
-background = "#2d353b"
+background = "#272e33"
 foreground = "#d3c6aa"
 frame_color = "#a7c080"
 timeout = 10
 
 [urgency_critical]
-background = "#4c3743"
+background = "#402b2b"
 foreground = "#d3c6aa"
 frame_color = "#e67e80"
 timeout = 0

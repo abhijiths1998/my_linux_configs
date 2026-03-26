@@ -1,7 +1,7 @@
-/* Everforest Dark Medium - Waybar Colors */
+/* Everforest Dark Hard - Waybar Colors */
 
-@define-color bg #2d353b;
-@define-color bg_alt #343f44;
+@define-color bg #272e33;
+@define-color bg_alt #2d353b;
 @define-color fg #d3c6aa;
 @define-color fg_dim #859289;
 @define-color accent #a7c080;

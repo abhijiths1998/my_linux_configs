@@ -364,6 +364,20 @@ install_media() {
     # Media info / metadata
     pkg_install "MediaInfo" mediainfo
 
+    # ── Screenshot tools ─────────────────────
+    pkg_install "Screenshot tools" \
+        grim \
+        slurp \
+        swappy
+
+    # grimblast (grim wrapper with better UX)
+    if pkg_available grimblast-git 2>/dev/null; then
+        pkg_install "Grimblast" grimblast-git
+    fi
+
+    # Flameshot (full GUI screenshot editor, Wayland support)
+    pkg_install "Flameshot (screenshot editor)" flameshot
+
     log_success "Media apps installed"
 }
 
