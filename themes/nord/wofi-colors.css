@@ -1,0 +1,13 @@
+/* Nord - Wofi Colors */
+
+@define-color bg #2e3440;
+@define-color bg_alt #3b4252;
+@define-color fg #eceff4;
+@define-color fg_dim #d8dee9;
+@define-color accent #88c0d0;
+@define-color color_red #bf616a;
+@define-color color_green #a3be8c;
+@define-color color_yellow #ebcb8b;
+@define-color color_blue #81a1c1;
+@define-color color_magenta #b48ead;
+@define-color color_cyan #88c0d0;

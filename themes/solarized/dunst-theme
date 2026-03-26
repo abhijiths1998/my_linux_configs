@@ -1,0 +1,17 @@
+[urgency_low]
+    background = "#002b36"
+    foreground = "#586e75"
+    frame_color = "#073642"
+    timeout = 5
+
+[urgency_normal]
+    background = "#002b36"
+    foreground = "#839496"
+    frame_color = "#268bd2"
+    timeout = 10
+
+[urgency_critical]
+    background = "#dc322f"
+    foreground = "#fdf6e3"
+    frame_color = "#dc322f"
+    timeout = 0

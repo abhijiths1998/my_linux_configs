@@ -1,0 +1,13 @@
+/* Everforest Dark Medium - Waybar Colors */
+
+@define-color bg #2d353b;
+@define-color bg_alt #343f44;
+@define-color fg #d3c6aa;
+@define-color fg_dim #859289;
+@define-color accent #a7c080;
+@define-color color_red #e67e80;
+@define-color color_green #a7c080;
+@define-color color_yellow #dbbc7f;
+@define-color color_blue #7fbbb3;
+@define-color color_magenta #d699b6;
+@define-color color_cyan #83c092;

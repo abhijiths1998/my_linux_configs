@@ -1,0 +1,13 @@
+/* Catppuccin Mocha - Wofi Colors */
+
+@define-color bg #1e1e2e;
+@define-color bg_alt #313244;
+@define-color fg #cdd6f4;
+@define-color fg_dim #a6adc8;
+@define-color accent #cba6f7;
+@define-color color_red #f38ba8;
+@define-color color_green #a6e3a1;
+@define-color color_yellow #f9e2af;
+@define-color color_blue #89b4fa;
+@define-color color_magenta #cba6f7;
+@define-color color_cyan #94e2d5;

@@ -1,0 +1,19 @@
+# Gruvbox Dark - Dunst Notification Colors
+
+[urgency_low]
+background = "#3c3836"
+foreground = "#a89984"
+frame_color = "#d65d0e"
+timeout = 5
+
+[urgency_normal]
+background = "#282828"
+foreground = "#ebdbb2"
+frame_color = "#d65d0e"
+timeout = 10
+
+[urgency_critical]
+background = "#282828"
+foreground = "#ebdbb2"
+frame_color = "#cc241d"
+timeout = 0

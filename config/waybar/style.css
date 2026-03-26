@@ -1,0 +1,102 @@
+@import "colors.css";
+
+* {
+    font-family: "JetBrains Mono Nerd Font", "JetBrains Mono", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: alpha(@bg, 0.85);
+    color: @fg;
+    border-radius: 12px;
+    border: 1px solid alpha(@accent, 0.3);
+}
+
+tooltip {
+    background: @bg;
+    border: 1px solid @accent;
+    border-radius: 8px;
+}
+
+tooltip label {
+    color: @fg;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    color: @fg_dim;
+    background: transparent;
+    border-radius: 8px;
+    margin: 4px 2px;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+    color: @bg;
+    background: @accent;
+}
+
+#workspaces button:hover {
+    background: alpha(@accent, 0.3);
+    color: @fg;
+}
+
+#window {
+    padding: 0 12px;
+    color: @fg_dim;
+}
+
+#clock {
+    padding: 0 12px;
+    color: @accent;
+    font-weight: bold;
+}
+
+#cpu, #memory, #battery, #network, #pulseaudio, #tray {
+    padding: 0 10px;
+    color: @fg;
+    margin: 4px 2px;
+    border-radius: 8px;
+}
+
+#cpu {
+    color: @color_cyan;
+}
+
+#memory {
+    color: @color_yellow;
+}
+
+#battery {
+    color: @color_green;
+}
+
+#battery.warning {
+    color: @color_yellow;
+}
+
+#battery.critical {
+    color: @color_red;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    to {
+        color: @fg;
+    }
+}
+
+#network {
+    color: @color_blue;
+}
+
+#pulseaudio {
+    color: @color_magenta;
+}
+
+#custom-power {
+    padding: 0 10px;
+    color: @color_red;
+    margin: 4px 4px 4px 2px;
+}

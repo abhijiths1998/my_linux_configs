@@ -1,0 +1,61 @@
+@import "colors.css";
+
+window {
+    margin: 0px;
+    border: 2px solid @accent;
+    border-radius: 12px;
+    background-color: alpha(@bg, 0.92);
+    font-family: "JetBrains Mono Nerd Font", monospace;
+    font-size: 14px;
+}
+
+#input {
+    all: unset;
+    margin: 8px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    color: @fg;
+    background-color: @bg_alt;
+    font-size: 14px;
+}
+
+#input:focus {
+    border: 1px solid @accent;
+}
+
+#inner-box {
+    margin: 4px 8px;
+    background-color: transparent;
+}
+
+#outer-box {
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0px;
+}
+
+#text {
+    margin: 2px;
+    padding: 4px 8px;
+    color: @fg;
+}
+
+#entry {
+    padding: 4px;
+    border-radius: 8px;
+}
+
+#entry:selected {
+    background-color: alpha(@accent, 0.25);
+    outline: none;
+}
+
+#entry:selected #text {
+    color: @accent;
+    font-weight: bold;
+}

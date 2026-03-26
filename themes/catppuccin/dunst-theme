@@ -1,0 +1,19 @@
+# Catppuccin Mocha - Dunst Notification Colors
+
+[urgency_low]
+background = "#313244"
+foreground = "#a6adc8"
+frame_color = "#cba6f7"
+timeout = 5
+
+[urgency_normal]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+frame_color = "#cba6f7"
+timeout = 10
+
+[urgency_critical]
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+frame_color = "#f38ba8"
+timeout = 0

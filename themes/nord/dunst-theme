@@ -1,0 +1,19 @@
+# Nord - Dunst Notification Colors
+
+[urgency_low]
+background = "#3b4252"
+foreground = "#d8dee9"
+frame_color = "#88c0d0"
+timeout = 5
+
+[urgency_normal]
+background = "#2e3440"
+foreground = "#eceff4"
+frame_color = "#88c0d0"
+timeout = 10
+
+[urgency_critical]
+background = "#2e3440"
+foreground = "#eceff4"
+frame_color = "#bf616a"
+timeout = 0
