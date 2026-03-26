@@ -146,3 +146,38 @@ mangohud %command%                     # FPS/stats overlay
 gamescope -f -- %command%              # SteamOS-style compositing
 gamemoderun mangohud %command%         # Both together
 ```
+
+---
+
+## Desktop Essentials
+
+`essentials-setup.sh` installs everything you need for daily use on a fresh Arch install.
+
+```bash
+# Install everything
+./essentials-setup.sh
+
+# Skip specific categories
+./essentials-setup.sh --skip-office --skip-dev
+
+# Preview
+./essentials-setup.sh --dry-run
+```
+
+### What it installs
+
+| Category | Packages |
+|----------|----------|
+| **Browser** | Zen Browser (preferred) > Brave > Firefox fallback |
+| **Communication** | Discord, Telegram, Signal, Thunderbird |
+| **Web Apps** | webapp-manager / Tangram (Flatpak fallback) |
+| **Keyring** | gnome-keyring, Seahorse, PAM auto-unlock |
+| **GUI Store** | Pamac (AUR + Flatpak support) / bauh fallback |
+| **Torrent** | qBittorrent |
+| **Media** | MPV, Spotify, Zathura (PDF), Loupe (images), Kooha (recorder) |
+| **Office** | LibreOffice Fresh + spell check |
+| **Utilities** | Thunar, btop, KeePassXC, Bluetooth, file-roller, gnome-disk-utility, Ventoy, nwg-look, fastfetch |
+| **Fonts** | JetBrains Mono NF, Fira Code NF, Cascadia Code NF, Noto (CJK + emoji), Font Awesome |
+| **Flatpak** | Flatpak + Flathub remote |
+| **Backup** | Timeshift + cronie for scheduled snapshots |
+| **Dev Tools** | Neovim, lazygit, Docker, VS Code, Python, Node.js, build essentials |
