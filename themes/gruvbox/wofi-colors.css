@@ -11,4 +11,4 @@
 @define-color color_blue #458588;
 @define-color color_magenta #b16286;
 @define-color color_cyan #689d6a;
-@define-color launcher_opacity 0.82;
+@define-color launcher_bg rgba(40, 40, 40, 0.82);

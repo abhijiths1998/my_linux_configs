@@ -1,28 +1,34 @@
 #!/usr/bin/env bash
 # Set wallpaper using swww
 # Usage: wallpaper.sh [path_to_image]
+#        wallpaper.sh --random   (pick random from wallpaper dir)
 
-WALLPAPER_DIR="$HOME/.dotfiles/wallpapers"
-CURRENT_THEME=$(cat "$HOME/.dotfiles/.current-theme" 2>/dev/null || echo "everforest")
+WALLPAPER_DIR="$HOME/Pictures/wallpapers"
 
-if [[ -n "$1" ]]; then
+pick_random() {
+    find "$WALLPAPER_DIR" -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.webp" \) \
+        | shuf -n 1
+}
+
+if [[ -n "$1" && "$1" != "--random" ]]; then
     IMG="$1"
-elif [[ -f "$WALLPAPER_DIR/$CURRENT_THEME.png" ]]; then
-    IMG="$WALLPAPER_DIR/$CURRENT_THEME.png"
-elif [[ -f "$WALLPAPER_DIR/$CURRENT_THEME.jpg" ]]; then
-    IMG="$WALLPAPER_DIR/$CURRENT_THEME.jpg"
 else
-    # Use first image found in wallpapers dir
-    IMG=$(find "$WALLPAPER_DIR" -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" \) | head -1)
+    IMG=$(pick_random)
 fi
 
 if [[ -z "$IMG" || ! -f "$IMG" ]]; then
-    echo "No wallpaper found. Place images in $WALLPAPER_DIR"
+    echo "No wallpaper found. Run: ~/my_linux_configs/scripts/download-wallpapers.sh"
     exit 1
 fi
 
-swww img "$IMG" \
-    --transition-type grow \
+# Vary transition type for visual interest
+TRANSITIONS=(grow wave outer wipe any)
+T=${TRANSITIONS[$((RANDOM % ${#TRANSITIONS[@]}))]}
+
+awww img "$IMG" \
+    --transition-type "$T" \
     --transition-pos 0.5,0.5 \
     --transition-duration 1.5 \
     --transition-fps 60
+
+echo "$IMG" > "$HOME/.cache/current-wallpaper"

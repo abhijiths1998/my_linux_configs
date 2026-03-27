@@ -9,4 +9,4 @@
 @define-color color_blue #7e9cd8;
 @define-color color_magenta #957fb8;
 @define-color color_cyan #6a9589;
-@define-color bar_opacity 0.72;
+@define-color bar_bg rgba(31, 31, 40, 0.72);
